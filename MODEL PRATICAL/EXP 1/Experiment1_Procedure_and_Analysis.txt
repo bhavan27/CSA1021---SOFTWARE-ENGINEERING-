@@ -1,0 +1,44 @@
+EXPERIMENT 1: RAPTOR FLOWCHART – GCD AND LCM OF TWO NUMBERS
+
+AIM
+To design a RAPTOR flowchart to find the GCD and LCM of two positive integers using Euclid's algorithm.
+
+PROCEDURE
+1. Open RAPTOR and create a new flowchart.
+2. Accept two positive integers A and B.
+3. Assign X = A and Y = B.
+4. Repeat while Y is not equal to 0:
+   a. Calculate R = X MOD Y.
+   b. Assign X = Y.
+   c. Assign Y = R.
+5. Assign GCD = X.
+6. Calculate LCM = (A * B) / GCD.
+7. Display GCD and LCM.
+8. Run the flowchart with the two test cases and verify the outputs.
+
+TEST CASE 1
+Input: A = 48, B = 18
+Euclid trace:
+48 MOD 18 = 12
+18 MOD 12 = 6
+12 MOD 6 = 0
+Output: GCD = 6, LCM = 144
+
+TEST CASE 2
+Input: A = 12, B = 18
+Euclid trace:
+12 MOD 18 = 12
+18 MOD 12 = 6
+12 MOD 6 = 0
+Output: GCD = 6, LCM = 36
+
+ANALYSIS: COMPARISON FOR 48 AND 18
+Euclid's algorithm performs 3 remainder calculations for 48 and 18.
+Checking every integer from 1 through the smaller number (18) requires up to 18 divisor checks.
+Therefore, Euclid's algorithm uses fewer steps for this input.
+
+RESULT
+The flowchart logic calculates the GCD and LCM of the two given positive integers. The expected outputs are verified for both test cases.
+
+NOTE
+The PNG output previews in this package are illustrative terminal-style previews, not screenshots captured from the RAPTOR application. For submission evidence, run the flowchart in RAPTOR and capture its actual output window.
