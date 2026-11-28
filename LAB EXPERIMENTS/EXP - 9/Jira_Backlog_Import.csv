@@ -1,0 +1,9 @@
+﻿Issue Type,Summary,Description,Priority,Story Points,Epic Name,Epic Link,Sprint
+Epic,Student Task Management System,Build a simple system to manage student tasks and deadlines.,High,,Student Task Management System,,
+Story,Create task,"As a student, I want to create a task with a title and deadline so I can track work.",High,3,,Student Task Management System,Sprint 1
+Story,View task list,"As a student, I want to view all tasks so I can see pending work.",High,2,,Student Task Management System,Sprint 1
+Story,Mark task completed,"As a student, I want to mark a task completed so I can track progress.",Medium,3,,Student Task Management System,Sprint 1
+Story,Edit task details,"As a student, I want to edit task details so I can update incorrect information.",Medium,3,,Student Task Management System,Sprint 2
+Story,Delete task,"As a student, I want to delete a task so I can remove obsolete items.",Low,2,,Student Task Management System,Sprint 2
+Task,Design task interface,Create a basic user interface layout for the task management system.,Medium,2,,Student Task Management System,Sprint 1
+Task,Test task functions,"Test task creation, viewing, completion, editing, and deletion.",High,3,,Student Task Management System,Sprint 2
