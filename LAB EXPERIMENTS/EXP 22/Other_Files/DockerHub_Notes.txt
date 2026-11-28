@@ -1,0 +1,5 @@
+Docker Hub notes:
+- Replace YOUR_USERNAME in commands with your Docker Hub username.
+- Use a Docker Hub access token when authenticating from CLI, if configured.
+- Never share or screenshot passwords/tokens.
+- Repository visibility can be public or private. Private repositories may require authentication to pull.

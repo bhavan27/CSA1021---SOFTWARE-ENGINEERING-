@@ -1,0 +1,37 @@
+EXPERIMENT 22 — PUSH AND PULL DOCKER IMAGES USING DOCKER HUB
+
+1. Create a Docker Hub account and a repository named dockerhub-demo.
+2. Open terminal inside Code/dockerhub_push_pull_demo.
+3. Build the image locally:
+   docker build -t dockerhub-demo:latest .
+
+4. Tag image with Docker Hub username:
+   docker tag dockerhub-demo:latest YOUR_USERNAME/dockerhub-demo:latest
+
+5. Log in to Docker Hub:
+   docker login
+
+6. Push the image:
+   docker push YOUR_USERNAME/dockerhub-demo:latest
+
+7. Remove the local image (optional, to demonstrate pulling):
+   docker rmi YOUR_USERNAME/dockerhub-demo:latest
+
+8. Pull the image from Docker Hub:
+   docker pull YOUR_USERNAME/dockerhub-demo:latest
+
+9. Run the pulled image:
+   docker run -d --name dockerhub-demo -p 5000:5000 YOUR_USERNAME/dockerhub-demo:latest
+
+10. Open in browser:
+    http://localhost:5000
+
+11. Verify:
+    docker images
+    docker ps
+
+12. Stop and remove container:
+    docker stop dockerhub-demo
+    docker rm dockerhub-demo
+
+Replace YOUR_USERNAME with your Docker Hub username.

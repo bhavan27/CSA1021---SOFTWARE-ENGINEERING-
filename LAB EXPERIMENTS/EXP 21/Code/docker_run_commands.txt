@@ -1,0 +1,21 @@
+EXPERIMENT 21 - CONTAINERIZING A PYTHON FLASK TO-DO APPLICATION USING DOCKER
+
+1. Extract the ZIP and open a terminal in Code/flask_todo_docker.
+2. Build the Docker image:
+   docker build -t flask-todo-app .
+3. Run the container:
+   docker run -d --name flask-todo -p 5000:5000 flask-todo-app
+4. Open the browser:
+   http://localhost:5000
+5. Add tasks, mark tasks complete, and delete tasks.
+6. Check the running container:
+   docker ps
+7. Stop and remove the container:
+   docker stop flask-todo
+   docker rm flask-todo
+
+Optional Docker Compose:
+docker compose up --build
+docker compose down
+
+Note: Tasks are stored in memory and reset when the container/application restarts.

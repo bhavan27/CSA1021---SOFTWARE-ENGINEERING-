@@ -1,0 +1,22 @@
+services:
+  frontend:
+    build: ./frontend
+    ports: ["8080:80"]
+    depends_on: [backend]
+  backend:
+    build: ./backend
+    environment:
+      DB_HOST: postgres
+      DB_NAME: tasksdb
+      DB_USER: tasksuser
+      DB_PASSWORD: taskspass
+    depends_on: [postgres]
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: tasksdb
+      POSTGRES_USER: tasksuser
+      POSTGRES_PASSWORD: taskspass
+    volumes: [dbdata:/var/lib/postgresql/data]
+volumes:
+  dbdata:

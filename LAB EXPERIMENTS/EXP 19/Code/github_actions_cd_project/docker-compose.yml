@@ -1,0 +1,6 @@
+services:
+  app:
+    build: .
+    container_name: github-actions-cd-app
+    ports:
+      - "5000:5000"

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Docker To-Do App</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <main class="container">
+    <h1>My To-Do List</h1>
+    <p class="subtitle">A simple Flask application running in Docker</p>
+    <form method="POST" class="add-form">
+      <input type="text" name="task" placeholder="Add a new task..." required>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul>
+      {% for task in tasks %}
+      <li class="{% if task.done %}done{% endif %}">
+        <span>{{ task.title }}</span>
+        <div class="actions">
+          <a href="{{ url_for('complete', task_id=task.id) }}">{{ 'Undo' if task.done else 'Done' }}</a>
+          <a class="delete" href="{{ url_for('delete', task_id=task.id) }}">Delete</a>
+        </div>
+      </li>
+      {% else %}
+      <li class="empty">No tasks yet. Add your first task!</li>
+      {% endfor %}
+    </ul>
+    <footer>Experiment 21 · Flask + Docker</footer>
+  </main>
+</body>
+</html>

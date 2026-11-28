@@ -1,0 +1,51 @@
+EXPERIMENT 23 — MULTI-CONTAINER APPLICATION ON KUBERNETES WITH SCALING
+
+Prerequisites: Docker Desktop with Kubernetes enabled OR Minikube; kubectl; Docker Hub account.
+
+A) Build and push images (from Code/multi_container_k8s):
+  docker build -t YOUR_DOCKERHUB_USERNAME/k8s-task-backend:latest ./backend
+  docker build -t YOUR_DOCKERHUB_USERNAME/k8s-task-frontend:latest ./frontend
+  docker login
+  docker push YOUR_DOCKERHUB_USERNAME/k8s-task-backend:latest
+  docker push YOUR_DOCKERHUB_USERNAME/k8s-task-frontend:latest
+
+B) Replace YOUR_DOCKERHUB_USERNAME in k8s/backend.yaml and k8s/frontend.yaml.
+
+C) Deploy in order:
+  kubectl apply -f k8s/secret.yaml
+  kubectl apply -f k8s/configmap.yaml
+  kubectl apply -f k8s/postgres.yaml
+  kubectl apply -f k8s/backend.yaml
+  kubectl apply -f k8s/frontend.yaml
+
+D) Verify:
+  kubectl get pods
+  kubectl get deployments
+  kubectl get services
+  kubectl get pvc
+
+E) Access frontend:
+  - NodePort: http://localhost:30080 (Docker Desktop Kubernetes)
+  - For Minikube: minikube service frontend
+
+F) Scale backend manually:
+  kubectl scale deployment backend --replicas=4
+  kubectl get pods -l app=backend
+  kubectl scale deployment backend --replicas=2
+
+G) Enable autoscaling (metrics-server must be available):
+  kubectl apply -f k8s/backend-hpa.yaml
+  kubectl get hpa
+  kubectl describe hpa backend-hpa
+
+H) Optional local Docker Compose test:
+  docker compose up --build
+  Open http://localhost:8080
+  docker compose down
+
+Notes:
+- The HPA needs metrics-server. In Minikube, enable it with:
+  minikube addons enable metrics-server
+- For Docker Desktop, ensure metrics-server support/configuration is available before expecting HPA metrics.
+- For a classroom demo, manual kubectl scale demonstrates scaling without metrics-server.
+- This is a lab demo; change the sample credentials before real deployment.

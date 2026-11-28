@@ -1,0 +1,6 @@
+Notes:
+- Replace YOUR_DOCKERHUB_USERNAME in image build/tag commands and YAML manifests.
+- The PostgreSQL credentials are demo credentials. Do not use them in production.
+- Frontend and backend are scaled as stateless replicas. PostgreSQL remains one replica for this lab.
+- PersistentVolumeClaim keeps database files across pod recreation when the cluster storage provisioner supports it.
+- HPA CPU-based autoscaling requires metrics-server and resource requests.
