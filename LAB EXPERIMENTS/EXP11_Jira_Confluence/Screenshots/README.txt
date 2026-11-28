@@ -1,0 +1,1 @@
+Place actual screenshots of your Jira issues, Confluence page, and verified issue links here. The Output dashboard image is a generated illustrative sample, not captured from a live Jira/Confluence session.

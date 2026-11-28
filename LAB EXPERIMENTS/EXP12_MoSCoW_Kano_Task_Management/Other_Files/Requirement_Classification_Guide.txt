@@ -1,0 +1,15 @@
+Classification Guide
+
+MoSCoW
+- Must Have: Essential for the release to work.
+- Should Have: Important, but not absolutely essential.
+- Could Have: Desirable if time and resources permit.
+- Won't Have (This Release): Explicitly deferred.
+
+Kano
+- Basic: Expected requirements; absence causes dissatisfaction.
+- Performance: Satisfaction increases as implementation improves.
+- Excitement: Unexpected features that delight users.
+- Indifferent: Features with little effect on satisfaction.
+
+Sample prioritization is illustrative; validate categories with stakeholders/users.

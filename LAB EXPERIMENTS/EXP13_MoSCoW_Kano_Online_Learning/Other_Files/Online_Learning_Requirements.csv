@@ -1,0 +1,14 @@
+﻿Requirement ID,Requirement,MoSCoW Priority,Kano Category,Rationale
+OL-01,User registration and login,Must Have,Basic,Access is essential to use the platform
+OL-02,Browse and search courses,Must Have,Basic,Learners need to discover courses
+OL-03,Enroll in a course,Must Have,Basic,Core learning workflow
+OL-04,View course lessons,Must Have,Basic,Essential course consumption
+OL-05,Track course progress,Should Have,Performance,More detailed tracking improves satisfaction
+OL-06,Download learning materials,Should Have,Performance,Adds flexibility for study
+OL-07,Quizzes and assessments,Should Have,Performance,Supports learning evaluation
+OL-08,Discussion forum,Could Have,Excitement,Enhances collaboration
+OL-09,Course completion certificate,Could Have,Excitement,Adds motivational value
+OL-10,Personalized course recommendations,Could Have,Excitement,Delightful personalization feature
+OL-11,Dark mode,Could Have,Indifferent,Customization with limited core impact
+OL-12,Live virtual classes,Won't Have (This Release),Excitement,Deferred to a later release
+OL-13,AI tutor/chatbot,Won't Have (This Release),Excitement,Deferred due to release scope

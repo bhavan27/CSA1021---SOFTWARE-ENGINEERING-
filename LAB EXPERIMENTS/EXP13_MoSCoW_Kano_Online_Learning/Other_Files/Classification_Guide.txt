@@ -1,0 +1,13 @@
+MoSCoW
+- Must Have: Essential for this release.
+- Should Have: Important but not essential.
+- Could Have: Desirable if time/resources permit.
+- Won't Have (This Release): Deferred.
+
+Kano
+- Basic: Expected features; absence causes dissatisfaction.
+- Performance: Satisfaction improves as feature quality increases.
+- Excitement: Unexpected features that delight users.
+- Indifferent: Features with little effect on satisfaction.
+
+These classifications are sample assumptions and should be validated with users/stakeholders.

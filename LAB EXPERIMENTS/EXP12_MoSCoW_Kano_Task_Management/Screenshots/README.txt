@@ -1,0 +1,1 @@
+Add actual screenshots from Jira showing created issues, backlog ordering, MoSCoW priorities, and Kano classifications. The Output image is a generated illustrative matrix, not a live Jira screenshot.

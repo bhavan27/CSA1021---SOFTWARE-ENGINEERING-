@@ -1,0 +1,1 @@
+Place actual Jira screenshots here: backlog, issue details, priorities, and Kano classifications. The Output matrix is a generated illustrative image, not a live Jira screenshot.

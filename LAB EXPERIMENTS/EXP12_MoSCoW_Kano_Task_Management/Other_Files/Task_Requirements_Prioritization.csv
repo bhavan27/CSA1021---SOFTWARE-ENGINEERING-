@@ -1,0 +1,12 @@
+﻿Requirement ID,Requirement,MoSCoW Priority,Kano Category,Rationale
+REQ-01,Create task with title and deadline,Must Have,Basic,Must be available for core task tracking
+REQ-02,View task list,Must Have,Basic,Users need to see all tasks
+REQ-03,Mark task completed,Must Have,Basic,Core completion tracking
+REQ-04,Edit task details,Should Have,Performance,Improves task management flexibility
+REQ-05,Delete task,Should Have,Performance,Useful for maintaining task list
+REQ-06,Task priority labels,Should Have,Performance,Improves organization
+REQ-07,Due-date reminders,Could Have,Excitement,Adds convenience beyond basic function
+REQ-08,Recurring tasks,Could Have,Excitement,Useful enhancement for repeated activities
+REQ-09,Color themes,Could Have,Indifferent,"Nice customization, low impact"
+REQ-10,Voice task creation,Won't Have (This Release),Excitement,Deferred due to release scope
+REQ-11,AI task suggestions,Won't Have (This Release),Excitement,Deferred for future release
