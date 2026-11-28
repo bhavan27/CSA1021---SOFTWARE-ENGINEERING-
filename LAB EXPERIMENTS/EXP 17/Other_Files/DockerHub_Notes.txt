@@ -1,0 +1,5 @@
+Docker Hub Image:
+Replace DOCKERHUB_USERNAME in the files and commands with your Docker Hub username.
+
+Important:
+The Kubernetes YAML uses a public Docker Hub image. Ensure the pushed repository is public, or configure image pull credentials for a private repository.

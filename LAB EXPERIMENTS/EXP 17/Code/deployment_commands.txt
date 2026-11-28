@@ -1,0 +1,39 @@
+EXPERIMENT 17 - FLASK API, DOCKER HUB, AND KUBERNETES
+
+A) Build Docker image (replace DOCKERHUB_USERNAME):
+docker build -t DOCKERHUB_USERNAME/flask-api:latest .
+
+B) Test locally:
+docker run -d --name flask-api -p 5000:5000 DOCKERHUB_USERNAME/flask-api:latest
+Open:
+http://localhost:5000/
+http://localhost:5000/api/hello
+http://localhost:5000/api/info
+
+C) Sign in and push to Docker Hub:
+docker login
+docker push DOCKERHUB_USERNAME/flask-api:latest
+
+D) Update Kubernetes deployment.yaml:
+Replace DOCKERHUB_USERNAME with your Docker Hub username.
+
+E) Deploy:
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
+F) Verify:
+kubectl get pods
+kubectl get deployments
+kubectl get services
+
+G) Access:
+For Minikube:
+minikube service flask-api-service
+Or try:
+http://MINIKUBE_IP:30080
+
+H) Cleanup:
+kubectl delete -f service.yaml
+kubectl delete -f deployment.yaml
+docker stop flask-api
+docker rm flask-api

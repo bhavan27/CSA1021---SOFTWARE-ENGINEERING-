@@ -1,0 +1,35 @@
+EXPERIMENT 18 — CI/CD PIPELINE WITH JENKINS FOR A CONTAINERIZED APPLICATION
+
+Prerequisites:
+- Jenkins installed and running
+- Docker installed on the Jenkins agent
+- Git repository containing this project
+- Docker Hub account
+- Jenkins plugins: Pipeline, Git, Credentials Binding (and Docker-related integration if configured)
+
+Setup:
+1. Replace YOUR_DOCKERHUB_USERNAME in Jenkinsfile with your Docker Hub username.
+2. In Jenkins, add a Username with password credential for Docker Hub.
+3. Set its Credential ID to: dockerhub-credentials
+4. Push this project to a Git repository.
+5. In Jenkins, create a Pipeline job.
+6. Select Pipeline script from SCM, choose Git, and enter your repository URL.
+7. Specify Jenkinsfile as the script path.
+8. Save and click Build Now.
+
+Pipeline stages:
+Checkout -> Install Dependencies -> Test -> Build Docker Image -> Push to Docker Hub
+
+Local testing:
+docker build -t flask-ci-app .
+docker run -d --name flask-ci-app -p 5000:5000 flask-ci-app
+Open http://localhost:5000 and http://localhost:5000/health
+
+Optional Docker Compose:
+docker compose up --build
+docker compose down
+
+Notes:
+- Jenkins pipeline uses shell steps (sh), suitable for Linux Jenkins agents.
+- Jenkins agent must have Docker daemon access and permission to run Docker commands.
+- Do not hardcode Docker Hub passwords in the Jenkinsfile. Use Jenkins credentials.
