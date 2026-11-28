@@ -1,0 +1,7 @@
+Key commands:
+git status — check repository status.
+git diff — inspect modifications.
+git add — stage changes.
+git commit -m "message" — record staged changes.
+git push origin main — upload commits to remote main branch.
+git log --oneline — view commit history.

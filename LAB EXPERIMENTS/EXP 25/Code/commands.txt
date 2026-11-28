@@ -1,0 +1,30 @@
+EXPERIMENT 25 — CREATING A GITHUB REPOSITORY AND PUSHING A README FILE
+
+1. Sign in to GitHub.
+2. Click the + icon → New repository.
+3. Enter repository name (example: my-first-repository).
+4. Select Public or Private.
+5. Create the repository. For this procedure, do not initialize it with a README.
+6. Create a local folder and place the included README.md file inside it.
+7. Open Terminal/Command Prompt in the folder.
+8. Initialize Git:
+   git init
+
+9. Stage README:
+   git add README.md
+
+10. Commit:
+   git commit -m "Add README"
+
+11. Rename branch to main:
+   git branch -M main
+
+12. Connect remote repository:
+   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+
+13. Push:
+   git push -u origin main
+
+14. Refresh GitHub repository page and verify README appears.
+
+If authentication is requested, authenticate through GitHub's supported browser flow or use a Personal Access Token; never put the token directly in a command screenshot.

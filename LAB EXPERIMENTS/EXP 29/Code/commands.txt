@@ -1,0 +1,43 @@
+EXPERIMENT 29 — FEATURE BRANCH (feature-login) AND PULL REQUEST
+
+A. Create and switch to a feature branch
+1. Clone the repository (if not already cloned):
+   git clone https://github.com/USERNAME/REPOSITORY.git
+   cd REPOSITORY
+
+2. Switch to main and update:
+   git checkout main
+   git pull origin main
+
+3. Create and switch to feature branch:
+   git checkout -b feature-login
+
+B. Implement feature
+4. Add/edit files (example: index.html login form).
+
+5. Check changes:
+   git status
+   git diff
+
+6. Stage and commit:
+   git add .
+   git commit -m "Add login feature"
+
+C. Push feature branch
+7. Push branch to GitHub:
+   git push -u origin feature-login
+
+D. Create Pull Request on GitHub
+8. Open repository on GitHub.
+9. Select "Compare & pull request" for feature-login, or go to Pull requests > New pull request.
+10. Set base branch to main and compare branch to feature-login.
+11. Add title and description, then click Create pull request.
+12. Review changes; merge when approved (if required by the exercise).
+
+E. Verify
+13. Confirm PR is created and branch changes are visible.
+14. After merging, update local main:
+   git checkout main
+   git pull origin main
+
+NOTE: A Pull Request requests review and merging; it does not merge automatically.

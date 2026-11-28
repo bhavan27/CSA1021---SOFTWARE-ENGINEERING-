@@ -1,0 +1,7 @@
+Git synchronization notes:
+- git fetch: downloads remote changes without integrating them into the current branch.
+- git pull: fetches and integrates remote changes into the current branch.
+- git status: shows local working-tree status.
+- git log: shows commit history.
+- git stash: temporarily stores uncommitted local changes.
+- git stash pop: restores stashed changes.

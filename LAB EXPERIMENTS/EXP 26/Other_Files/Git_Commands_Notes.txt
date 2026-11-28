@@ -1,0 +1,8 @@
+Git commands:
+- git clone URL: downloads a repository and its history.
+- cd REPOSITORY: enters the cloned folder.
+- git status: displays working tree status.
+- git diff: displays unstaged changes.
+- git add: stages modifications.
+- git commit: records staged modifications.
+- git push: uploads commits to remote repository.

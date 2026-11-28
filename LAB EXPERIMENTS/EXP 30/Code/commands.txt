@@ -1,0 +1,58 @@
+EXPERIMENT 30 — FORKING, FEATURE BRANCH AND PULL REQUEST TO THE ORIGINAL REPOSITORY
+
+Prerequisites:
+- Git installed
+- GitHub account
+- Original public repository where you can submit contributions
+
+1. Fork the Original Repository
+   a. Open the original repository on GitHub.
+   b. Click Fork.
+   c. Select your GitHub account as the destination.
+   d. Create the fork.
+
+2. Clone Your Fork
+   git clone https://github.com/YOUR_USERNAME/REPOSITORY.git
+   cd REPOSITORY
+
+3. Add the Original Repository as Upstream
+   git remote add upstream https://github.com/ORIGINAL_OWNER/REPOSITORY.git
+   git remote -v
+
+4. Create a Feature Branch
+   git checkout -b feature-contribution
+
+5. Make a Change
+   Edit or add a file (for example, update README.md or add index.html).
+
+6. Review, Stage and Commit
+   git status
+   git diff
+   git add .
+   git commit -m "Add contribution feature"
+
+7. Push Feature Branch to Your Fork
+   git push -u origin feature-contribution
+
+8. Create Pull Request to Original Repository
+   a. Open your fork on GitHub.
+   b. Select Compare & pull request (or Pull requests > New pull request).
+   c. Ensure the PR destination/base is the original repository's main branch.
+   d. Ensure the source/head is YOUR_USERNAME:feature-contribution.
+   e. Add a title and description.
+   f. Click Create pull request.
+
+9. Review and Follow Up
+   Respond to review comments and push any requested changes to the same feature branch.
+   The Pull Request updates automatically.
+
+10. (Optional) Sync Your Fork
+   git checkout main
+   git fetch upstream
+   git merge upstream/main
+   git push origin main
+
+Important:
+- origin refers to your fork.
+- upstream refers to the original repository.
+- A Pull Request proposes changes; maintainers of the original repository decide whether to accept and merge it.

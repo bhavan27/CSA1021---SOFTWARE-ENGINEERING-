@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: flask-github-actions-demo
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /health

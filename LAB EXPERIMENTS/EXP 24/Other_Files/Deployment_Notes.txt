@@ -1,0 +1,6 @@
+Cloud deployment provider used in this package: Render.
+The workflow triggers on pushes and pull requests targeting main. Tests run on both.
+Deployment is restricted to pushes to main and occurs after tests pass.
+RENDER_DEPLOY_HOOK must be configured as a GitHub Actions secret.
+For strict Actions-driven deployment, disable automatic deploys in Render after initial setup.
+Do not commit deploy hook URLs, credentials, or tokens.

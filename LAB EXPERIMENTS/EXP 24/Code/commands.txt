@@ -1,0 +1,25 @@
+EXPERIMENT 24 — CI/CD PIPELINE FOR FLASK USING GITHUB ACTIONS WITH CLOUD DEPLOYMENT
+
+1. Create a GitHub repository (main branch).
+2. Upload/push project files to GitHub.
+3. Create a Render Web Service linked to the repository and deploy once.
+4. Copy the Render Deploy Hook URL.
+5. In GitHub: Repository → Settings → Secrets and variables → Actions → New repository secret.
+   Name: RENDER_DEPLOY_HOOK
+   Value: paste the Render deploy hook URL (keep secret).
+6. Push a change to main.
+7. Open GitHub repository → Actions → Flask CI/CD Pipeline.
+8. Confirm checkout, Python setup, dependency install and pytest stages pass.
+9. Confirm Deploy to Render stage runs for a push to main.
+10. Open the Render service URL and verify the home page.
+11. Open /health and verify JSON status healthy.
+
+Local test:
+  pip install -r requirements.txt
+  pytest
+  python app.py
+
+Git:
+  git add .
+  git commit -m "Configure Flask CI/CD deployment"
+  git push origin main

@@ -1,0 +1,19 @@
+FORKING AND PULL REQUEST NOTES
+
+Fork:
+A personal copy of another user's repository under your GitHub account.
+
+origin:
+The remote URL of your fork. You push your contribution branch here.
+
+upstream:
+The remote URL of the original repository. You fetch updates from this remote.
+
+Feature branch:
+A separate branch used to develop a contribution without directly changing main.
+
+Pull Request:
+A proposal to merge your feature branch from your fork into a branch of the original repository. Original maintainers review and decide whether to merge it.
+
+Typical relationship:
+YOUR_FORK:feature-contribution -> ORIGINAL_REPOSITORY:main

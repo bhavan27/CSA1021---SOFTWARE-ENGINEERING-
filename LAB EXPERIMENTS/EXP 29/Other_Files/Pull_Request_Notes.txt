@@ -1,0 +1,9 @@
+Git Branch and Pull Request Notes
+
+- main: stable primary branch.
+- feature-login: isolated branch for login feature development.
+- Pull Request (PR): request to review and merge changes from one branch into another.
+- Base branch: destination branch (main).
+- Compare branch: branch containing proposed changes (feature-login).
+- Review: teammates inspect the changes and may comment or approve.
+- Merge: integrates the feature branch into the base branch.

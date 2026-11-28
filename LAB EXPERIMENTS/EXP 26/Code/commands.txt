@@ -1,0 +1,23 @@
+EXPERIMENT 26 — CLONING A GITHUB REPOSITORY AND EDITING FILES LOCALLY
+
+1. Open the GitHub repository you want to clone.
+2. Click Code and copy the HTTPS URL.
+3. Open Terminal/Command Prompt in the destination directory.
+4. Clone the repository:
+   git clone https://github.com/USERNAME/REPOSITORY.git
+5. Move into the cloned folder:
+   cd REPOSITORY
+6. Open files in VS Code or another editor and make changes.
+7. Check the changes:
+   git status
+   git diff
+8. Stage edited files:
+   git add .
+9. Commit:
+   git commit -m "Edit files locally"
+10. Push changes to GitHub:
+   git push
+11. Refresh the GitHub repository and verify the edits.
+
+If you only need to demonstrate local editing, stop after git status and git diff.
+If pushing to a repository you do not own, you may not have permission; fork it first.
