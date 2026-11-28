@@ -1,0 +1,1 @@
+Place your actual screenshot from Excel/Google Sheets or the tool used during the experiment here. The Output image in the Output folder is a generated sample visualization, not a screenshot captured from a live application.

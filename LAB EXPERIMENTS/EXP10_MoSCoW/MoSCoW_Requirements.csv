@@ -1,0 +1,14 @@
+﻿Requirement ID,Requirement,Description,Priority
+R1,User Login,Users must log in securely using username and password.,Must Have
+R2,Book Search,"Users can search books by title, author, or ISBN.",Must Have
+R3,Book Issue,Librarian can issue books to registered users.,Must Have
+R4,Book Return,Librarian can record returned books and update availability.,Must Have
+R5,Book Catalog,System maintains book details and availability.,Must Have
+R6,Fine Calculation,System calculates overdue fines automatically.,Should Have
+R7,Book Reservation,Users can reserve currently unavailable books.,Should Have
+R8,Email Notifications,System sends due-date and overdue reminders.,Should Have
+R9,Recommendation Feature,Suggests books based on borrowing history.,Could Have
+R10,Mobile App,Provide a dedicated mobile application.,Could Have
+R11,Theme Customization,Allow users to choose interface themes.,Could Have
+R12,Voice Search,Search books using voice commands.,Won't Have (This Release)
+R13,AI Chatbot,Provide chatbot assistance for library queries.,Won't Have (This Release)
