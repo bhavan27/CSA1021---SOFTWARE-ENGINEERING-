@@ -1,0 +1,1 @@
+Add actual screenshots showing: (1) forked repository, (2) feature branch, (3) commit history, (4) pushed branch, and (5) Pull Request page. The Output image is illustrative and not captured from GitHub.
