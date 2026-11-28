@@ -1,0 +1,22 @@
+# Open a terminal in Code/website_project
+
+# Build the Docker image
+docker build -t static-nginx-site .
+
+# Run the container (host port 8080 -> container port 80)
+docker run -d --name static-website -p 8080:80 static-nginx-site
+
+# Open in your browser:
+# http://localhost:8080
+
+# Check running containers
+docker ps
+
+# Stop the container
+docker stop static-website
+
+# Remove the container
+docker rm static-website
+
+# Optional: remove the image
+docker rmi static-nginx-site

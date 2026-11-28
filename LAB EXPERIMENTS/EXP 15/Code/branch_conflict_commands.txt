@@ -1,0 +1,35 @@
+# Experiment 15 - Git branches and merge conflict resolution
+# Run these commands in Git Bash (or a terminal with Git installed).
+
+mkdir git-merge-conflict-demo
+cd git-merge-conflict-demo
+git init
+git config user.name "Student"
+git config user.email "student@example.com"
+
+echo "Project status: Initial" > status.txt
+git add status.txt
+git commit -m "Initial commit"
+
+git branch feature
+git switch feature
+echo "Project status: Feature branch update" > status.txt
+git add status.txt
+git commit -m "Update status on feature branch"
+
+git switch main
+echo "Project status: Main branch update" > status.txt
+git add status.txt
+git commit -m "Update status on main branch"
+
+# This merge is expected to create a conflict:
+git merge feature
+
+# Open status.txt, remove the conflict markers, and choose/compose the final line.
+# Example resolved content:
+# Project status: Main and feature updates combined
+
+git add status.txt
+git commit -m "Resolve merge conflict"
+git log --oneline --graph --all
+cat status.txt

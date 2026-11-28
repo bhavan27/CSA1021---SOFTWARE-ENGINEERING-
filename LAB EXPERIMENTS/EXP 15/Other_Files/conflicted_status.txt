@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+Project status: Main branch update
+=======
+Project status: Feature branch update
+>>>>>>> feature
+
+# This is the conflict content shown after merging.
+# Resolve it by editing the file to a chosen final version, for example:
+# Project status: Main and feature updates combined
